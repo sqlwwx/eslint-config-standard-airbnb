@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-standard-airbnb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "standard + airbnb",
   "main": "index.js",
   "scripts": {
@@ -17,14 +17,14 @@
   },
   "homepage": "https://github.com/sqlwwx/eslint-config-standard-airbnb#readme",
   "dependencies": {
-    "babel-eslint": "^10",
-    "eslint-config-airbnb": "^18",
-    "eslint-config-standard": "^13",
-    "eslint-plugin-import": "^2",
-    "eslint-plugin-jsx-a11y": "^6",
-    "eslint-plugin-node": "^9",
-    "eslint-plugin-promise": "^4",
-    "eslint-plugin-react": "^7",
-    "eslint-plugin-standard": "^4"
+    "babel-eslint": "latest",
+    "eslint-config-airbnb": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-standard": "latest"
   }
 }
