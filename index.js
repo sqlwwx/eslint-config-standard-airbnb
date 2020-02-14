@@ -7,6 +7,7 @@ module.exports = {
     'class-methods-use-this': ['error', {
       exceptMethods: [
         ...rules['class-methods-use-this'][1].exceptMethods,
+        'componentDidCatchError',
         'componentWillReact',
         'componentDidShow',
         'componentDidHide'
