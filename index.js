@@ -28,7 +28,7 @@ module.exports = {
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
     'no-unused-vars': ['error', {
       vars: 'all',
-      varsIgnorePattern: 'Taro',
+      varsIgnorePattern: '[T]aro|[C]omponent',
       args: 'all',
       ignoreRestSiblings: true
     }],

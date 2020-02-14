@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-standard-airbnb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "standard + airbnb",
   "main": "index.js",
   "scripts": {
