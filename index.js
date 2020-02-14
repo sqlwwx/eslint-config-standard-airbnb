@@ -1,12 +1,23 @@
+const { rules } = require('eslint-config-airbnb/rules/react')
+
 module.exports = {
   extends: ['standard', 'airbnb'],
   rules: {
     semi: ['error', 'never'],
-    'space-before-function-paren': ['error', 'always'],
-    'arrow-parens': ['error', 'as-needed'],
-    'arrow-body-style': ['off'],
-    'import/prefer-default-export': [1],
-    'class-methods-use-this': [1],
+    'class-methods-use-this': ['error', {
+      exceptMethods: [
+        ...rules['class-methods-use-this'][1].exceptMethods,
+        'componentWillReact',
+        'componentDidShow',
+        'componentDidHide'
+      ]
+    }],
+    'react/state-in-constructor': ['off'],
+    'react/prop-types': ['warn', rules['react/prop-types'][1]],
+    'arrow-body-style': ['warn', 'as-needed', {
+      requireReturnForObjectLiteral: false,
+    }],
+    'import/prefer-default-export': ['warn'],
     'comma-dangle': ['error', {
       arrays: 'never',
       objects: 'never',
@@ -14,6 +25,12 @@ module.exports = {
       exports: 'never',
       functions: 'never'
     }],
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }]
+    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
+    'no-unused-vars': ['error', {
+      vars: 'all',
+      varsIgnorePattern: 'Taro',
+      args: 'all',
+      ignoreRestSiblings: true
+    }],
   }
 }
