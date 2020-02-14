@@ -13,7 +13,11 @@ module.exports = {
       ]
     }],
     'react/state-in-constructor': ['off'],
-    'react/prop-types': ['warn', rules['react/prop-types'][1]],
+    'react/prop-types': ['error', {
+      ignore: [],
+      customValidators: [],
+      skipUndeclared: true
+    }],
     'arrow-body-style': ['warn', 'as-needed', {
       requireReturnForObjectLiteral: false,
     }],
