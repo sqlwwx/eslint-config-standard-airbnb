@@ -1,7 +1,7 @@
 const { rules } = require('eslint-config-airbnb/rules/react')
 
 module.exports = {
-  extends: ['standard', 'airbnb'],
+  extends: ['standard', 'airbnb', 'taro'],
   rules: {
     semi: ['error', 'never'],
     'class-methods-use-this': ['error', {
@@ -10,7 +10,13 @@ module.exports = {
         'componentDidCatchError',
         'componentWillReact',
         'componentDidShow',
-        'componentDidHide'
+        'componentDidHide',
+        'onPullDownRefresh',
+        'onReachBottom',
+        'onShareAppMessage',
+        'onPageScroll',
+        'onTabItemTap',
+        'componentWillPreload'
       ]
     }],
     'react/state-in-constructor': ['off'],
@@ -30,6 +36,7 @@ module.exports = {
       exports: 'never',
       functions: 'never'
     }],
-    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }]
+    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx', '.tsx'] }],
+    'no-unused-vars': ['error', { varsIgnorePattern: 'Taro' }],
   }
 }
