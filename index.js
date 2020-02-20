@@ -16,7 +16,13 @@ module.exports = {
         'onShareAppMessage',
         'onPageScroll',
         'onTabItemTap',
-        'componentWillPreload'
+        'componentWillPreload',
+        'componentDidNotFound',
+        'onResize',
+        'onTitleClick',
+        'onOptionMenuClick',
+        'onPopMenuClick',
+        'onPullIntercept',
       ]
     }],
     'react/state-in-constructor': ['off'],
